@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  Helper_Type: MyString
+  Twitter: MyString
+
+two:
+  Name: MyString
+  Helper_Type: MyString
+  Twitter: MyString

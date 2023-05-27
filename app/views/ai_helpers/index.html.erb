@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>AI helpers</h1>
+
+<table class="table table-hover" >
+<tread>
+<tr>
+  <th scope="col">Name:</th>
+  <th scope="col">Helper type:</th>
+  <th scope="col">Twitter:</th>
+  <th scope="col"></th>
+  </tr>
+</tread>
+<tbody>
+  <% @ai_helpers.each do |ai_helper| %>
+    <%= render ai_helper %>
+    
+  <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New AI helper", new_ai_helper_path, class: 'btn btn-outline-warning' %>

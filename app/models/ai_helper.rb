@@ -1,0 +1,3 @@
+class AiHelper < ApplicationRecord
+    
+end

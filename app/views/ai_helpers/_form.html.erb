@@ -1,0 +1,32 @@
+<%= form_with(model: ai_helper) do |form| %>
+  <% if ai_helper.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ai_helper.errors.count, "error") %> prohibited this ai_helper from being saved:</h2>
+
+      <ul>
+        <% ai_helper.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Name, style: "display: block" %>
+    <%= form.text_field :Name %>
+  </div>
+
+  <div>
+    <%= form.label :Helper_Type, style: "display: block" %>
+    <%= form.text_field :Helper_Type %>
+  </div>
+
+  <div>
+    <%= form.label :Twitter, style: "display: block" %>
+    <%= form.text_field :Twitter %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
